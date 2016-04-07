@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理画面</title>
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!--iconFont-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  </head>
+  <style>
+    #title {
+      display: inline-block;
+    }
+    #wrap {
+      max-width: 100%;
+    }
+    #sidebar {
+    }
+  </style>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <span class="vertical menu-text" id="title">admin</span>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="has-submenu">
+              <a href="#">One</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="wrap" class="row large-collapse" >
+      <aside id="sidebar" class="columns small-3">
+            <ul class="vertical accordion-menu menu" data-accordion-menu>
+              <li>
+                <a href="#">Item 1</a>
+                <ul class="menu vertical sublevel-1">
+                  <li>
+                    <a href="#">Sub-item 1</a>
+                    <ul class="menu vertical sublevel-2">
+                      <li><a class="subitem" href="#">Thing 1</a></li>
+                      <li><a class="subitem" href="#">Thing 2</a></li>
+                      <li><a class="subitem" href="#">Thing 3</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Sub-item 2</a>
+                    <ul class="menu vertical sublevel-2">
+                      <li>
+                        <a href="#">Super-sub-item 1</a>
+                        <ul class="menu vertical sublevel-3">
+                          <li><a class="subitem" href="#">Thing 1</a></li>
+                          <li><a class="subitem" href="#">Thing 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="subitem" href="#">Thing 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="subitem" href="#">Thing 1</a></li>
+                  <li><a class="subitem" href="#">Thing 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Item 2</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><a class="subitem" href="#">Thing 1</a></li>
+                  <li><a class="subitem" href="#">Thing 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Item 3</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><a class="subitem" href="#">Thing 1</a></li>
+                  <li><a class="subitem" href="#">Thing 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Item 4</a>
+                <ul class="menu vertical sublevel-1">
+                  <li>
+                    <a href="#">Sub-item 3</a>
+                    <ul class="menu vertical sublevel-2">
+                      <li><a class="subitem" href="#">Thing 1</a></li>
+                      <li><a class="subitem" href="#">Thing 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="subitem" href="#">Thing 1</a></li>
+                  <li><a class="subitem" href="#">Thing 2</a></li>
+                </ul>
+              </li>
+            </ul>
+
+      </aside>
+    <section class="columns small-9" style="background: skyblue;">
+      <p>コンテンツとかずらずらと</p>
+    </section>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
