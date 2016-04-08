@@ -9,21 +9,14 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <!--iconFont-->
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/myStyle.css">
   </head>
-  <style>
-    #title {
-      display: inline-block;
-    }
-    #wrap {
-      max-width: 100%;
-    }
-    #sidebar {
-    }
-  </style>
   <body>
     <header>
       <div class="top-bar">
@@ -32,32 +25,30 @@
         </div>
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
+            <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+            <li><a href="#"><i class="fa fa-bell-o"><span class="alert label">1</span></i></a></li>
             <li class="has-submenu">
-              <a href="#">One</a>
+              <a href="#"><i class="fa fa-user"></i>User Name</a>
               <ul class="submenu menu vertical" data-submenu>
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
+                <li><a href="#"><i class="fa fa-cogs"></i> Setting</a></li>
+                <li><a href="#"><i class="fa fa-long-arrow-right"></i> Sign Out</a></li>
               </ul>
             </li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
           </ul>
         </div>
       </div>
     </header>
-    <div id="wrap" class="row large-collapse" >
+    <div id="wrap" class="row large-collapse">
       <aside id="sidebar" class="columns small-3">
             <ul class="vertical accordion-menu menu" data-accordion-menu>
               <li>
-                <a href="#">Item 1</a>
+                <a class="dashboard" href="#">Dashboard</a>
                 <ul class="menu vertical sublevel-1">
                   <li>
                     <a href="#">Sub-item 1</a>
                     <ul class="menu vertical sublevel-2">
                       <li><a class="subitem" href="#">Thing 1</a></li>
                       <li><a class="subitem" href="#">Thing 2</a></li>
-                      <li><a class="subitem" href="#">Thing 3</a></li>
                     </ul>
                   </li>
                   <li>
@@ -108,9 +99,117 @@
             </ul>
 
       </aside>
-    <section class="columns small-9" style="background: skyblue;">
-      <p>コンテンツとかずらずらと</p>
-    </section>
+    <section id="contentsUnit" class="columns small-9">
+      <h1>Dashboard</h1>
+      <div class="button-group">
+        <a class="button">Button-One</a>
+        <a class="button">Button-Two</a>
+        <a class="button">Button-Three</a>
+      </div>
+      <div class="expanded button-group">
+        <a class="button">Expanded</a>
+        <a class="button">Button</a>
+        <a class="button">Group</a>
+      </div>
+      <div class="low">
+        <div class="small-up-2 large-up-4">
+          <div class="column" style="background: orange">
+            <div class="inner">
+              <h3>150</h3>
+              <p>New Orders</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="column" style="background: hotpink">
+            <div class="inner">
+              <h3>150</h3>
+              <p>New Orders</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="column" style="background: deepskyblue">
+            <div class="inner">
+              <h3>150</h3>
+              <p>New Orders</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="column" style="background: greenyellow">
+            <div class="inner">
+              <h3>150</h3>
+              <p>New Orders</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div id="cards" class="row">
+        <div class="columns large-6">
+          <div class="alert-box success">
+            <strong>Yo!</strong> Alert Success
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box alert">
+            <strong>Yo!</strong> Alert Alert
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box info">
+            <strong>Yo!</strong> Alert Info
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box warning">
+            <strong>Yo!</strong> Alert Warning
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box large">
+            <strong>Yo!</strong> Large Alert
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box small">
+            <strong>Yo!</strong> Small Alert
+            <a href="#" class="close">⊗</a>
+          </div>
+        </div>
+        <div class="columns large-6">
+          <div class="alert-box success">
+            <strong>Yo!</strong> Alert Success
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box alert">
+            <strong>Yo!</strong> Alert Alert
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box info">
+            <strong>Yo!</strong> Alert Info
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box warning">
+            <strong>Yo!</strong> Alert Warning
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box large">
+            <strong>Yo!</strong> Large Alert
+            <a href="#" class="close">⊗</a>
+          </div>
+          <div class="alert-box small">
+            <strong>Yo!</strong> Small Alert
+            <a href="#" class="close">⊗</a>
+          </div>
+        </div>
+      </div>
+    </section><!--contents-->
     </div>
 
     <script src="js/vendor/jquery.js"></script>
